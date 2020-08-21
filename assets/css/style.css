@@ -44,7 +44,7 @@ main {
   padding-left: 3%;
 }
 .text-wrap h1 {
-  font-size: 2em;
+  font-size: 3em;
   padding-bottom: 1vh;
 }
 .text-wrap p {
@@ -92,7 +92,8 @@ footer ul li a:hover {
 /* ABOUT */
 
 #about {
-  background: url(../img/bild9.jpeg) center/cover no-repeat;
+  background: url(https://images.unsplash.com/photo-1597120589652-5b632e92e778?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+    center/cover no-repeat;
   color: #f1f1f1;
   display: flex;
   align-items: center;
@@ -144,6 +145,12 @@ footer ul li a:hover {
   overflow: hidden;
   width: 100rem;
   background: #726193;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url(https://images.unsplash.com/photo-1597120589652-5b632e92e778?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)
+      left/contain no-repeat;
 }
 .grid-wrap {
   display: grid;
@@ -233,10 +240,10 @@ footer ul li a:hover {
   color: #ffe4b4;
 }
 .social i {
-    transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 .social i:hover {
-     transform: scale(0.8);
+  transform: scale(0.8);
 }
 
 @keyframes gradient {
@@ -250,3 +257,88 @@ footer ul li a:hover {
     background-position: 0% 50%;
   }
 }
+
+#skills {
+  background: linear-gradient(-45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 90rem;
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  color: #f1f1f1;
+}
+#skills article h2 {
+  border-bottom: 1px solid #ffe4b4;
+  padding-bottom: 3px;
+  font-size: 2em;
+  font-weight: 400;
+}
+#skills article:first-of-type {
+  padding-left: 3.5em;
+}
+#skills article:nth-of-type(2) {
+  padding: 0 10%;
+}
+.bars-wrap {
+  margin-bottom: 1em;
+}
+.bars-wrap h3 {
+  padding-bottom: 5px;
+}
+.full-bar {
+  background: rgba(241, 241, 241, 0.3);
+  height: 3vh;
+  border-radius: 10px;
+}
+.bar {
+  height: 3vh;
+  border-radius: 10px;
+  background: rgba(241, 241, 241, 0.8);
+  color: #726193;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+}
+.html {
+  width: 90%;
+}
+.js {
+  width: 70%;
+}
+.git {
+  width: 70%;
+}
+.design {
+  width: 50%;
+}
+.react {
+  width: 40%;
+}
+
+/* MEDIA QUERIES */
+/* @media (max-width: 1024px) {
+    body, main {
+        display: unset;
+        overflow-y: auto;
+    }
+    #intro, #about, #skills, #gallery, #contact {
+        display: unset;
+        width: 100%;
+         margin: 0 auto;
+    }
+    main {
+        margin: 0;
+    }
+    #gallery{
+        width: 100%;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media (max-width: 767px){} */
