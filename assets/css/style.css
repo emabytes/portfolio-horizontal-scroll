@@ -1,0 +1,252 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  overflow-y: hidden;
+}
+a {
+  text-decoration: none;
+}
+section {
+  height: 60vh;
+}
+main {
+  box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.55);
+  display: flex;
+  margin-left: 15%;
+}
+
+/* INTRO */
+
+#intro {
+  width: 80rem;
+  background: linear-gradient(-45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+}
+#intro article {
+  display: flex;
+  align-items: center;
+  color: #f1f1f1;
+}
+#intro img {
+  height: 60vh;
+}
+.text-wrap {
+  padding-left: 3%;
+}
+.text-wrap h1 {
+  font-size: 2em;
+  padding-bottom: 1vh;
+}
+.text-wrap p {
+  font-size: 1.2em;
+  padding-bottom: 4vh;
+  font-weight: 300;
+}
+.btn {
+  background: #f1f1f1;
+  padding: 0.5em 1.5em;
+  box-shadow: 10px 10px 40px -11px rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+.btn:hover {
+  /* color: #f1f1f1;
+  background: #726193; */
+  box-shadow: none;
+}
+
+/* FOOTER */
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 10vh;
+  left: 30%;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+}
+footer ul li a {
+  text-transform: uppercase;
+  padding: 0 0.9em;
+  color: #726193;
+  transition: all 0.5s;
+  font-size: 1.1em;
+}
+footer ul li a:hover {
+  color: #e37b7c;
+}
+
+/* ABOUT */
+
+#about {
+  background: url(../img/bild9.jpeg) center/cover no-repeat;
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  width: 80rem;
+}
+#about h2 {
+  border-bottom: 1px solid #ffe4b4;
+  padding-bottom: 3px;
+  font-size: 2em;
+  font-weight: 400;
+}
+#about div:nth-of-type(1) {
+  width: 40%;
+}
+.about-text {
+  padding: 0 5%;
+}
+.about-text p {
+  width: 90%;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+.about-text h3 {
+  padding-bottom: 2vh;
+  font-size: 1.5em;
+}
+.about-text p:nth-of-type(1) {
+  padding-bottom: 2vh;
+}
+.overlay {
+  background: linear-gradient(
+    45deg,
+    rgba(114, 97, 147, 0.35) 25%,
+    rgba(227, 123, 124, 0.35) 50%,
+    rgba(255, 228, 180, 0.35)
+  );
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  padding: 0 5%;
+}
+
+/* GALLERY */
+
+#gallery {
+  color: #f1f1f1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100rem;
+  background: #726193;
+}
+.grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 60vh;
+}
+.grid-wrap div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.grid-wrap div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s ease;
+  filter: brightness(50%);
+}
+.grid-wrap div img:hover {
+  transform: scale(1.3);
+  filter: none;
+}
+#gallery h2 {
+  font-size: 2em;
+  font-weight: 400;
+  border-bottom: 1px solid #ffe4b4;
+  padding-bottom: 3px;
+}
+
+/* CONTACT */
+
+#contact {
+  background: linear-gradient(-45deg, #726193 20%, #e37b7c 60%, #ffe4b4);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 70rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #f1f1f1;
+}
+#contact h2 {
+  border-bottom: 1px solid #ffe4b4;
+  padding-bottom: 3px;
+  font-size: 2em;
+  font-weight: 400;
+}
+#contact div:first-of-type {
+  padding-left: 3.5em;
+}
+.social {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 3em;
+}
+.social h4 {
+  font-size: 2em;
+  padding-bottom: 2vh;
+}
+.social h5 {
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 2vh;
+}
+.social ul {
+  display: flex;
+  list-style-type: none;
+}
+.social img {
+  border: 2px solid white;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5vh;
+}
+.social a {
+  font-size: 2.5em;
+  color: #353865;
+  padding: 0 5px;
+}
+.social a:hover {
+  color: #ffe4b4;
+}
+.social i {
+    transition: all 0.6s ease;
+}
+.social i:hover {
+     transform: scale(0.8);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
