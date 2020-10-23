@@ -11,6 +11,7 @@ body {
   align-items: center;
   font-family: "Montserrat", sans-serif;
   overflow-y: hidden;
+  
 }
 a {
   text-decoration: none;
@@ -21,7 +22,9 @@ section {
 main {
   box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.55);
   display: flex;
-  margin-left: 15%;
+}
+.wrap {
+  padding: 0 10%;
 }
 
 /* INTRO */
